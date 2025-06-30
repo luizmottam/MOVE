@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    color: #000000;
+    color: #142B40;
 }
 
 .container {
@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-    background-color: #FFFFFF;
+    background-color: #142B40;
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -43,7 +43,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #000000;
+    color: #D9AA71;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -55,7 +55,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #FFFFFF;
+    color: #D9AA71;
     position: relative;
 }
 
@@ -66,7 +66,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(20, 43, 64, 0.5);
 }
 
 .hero-content {
@@ -87,10 +87,10 @@ body {
 }
 
 .hero-form {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(20, 43, 64, 0.9);
     padding: 40px;
     border-radius: 10px;
-    color: #000000;
+    color: #D9AA71;
 }
 
 .hero-form h2 {
@@ -110,7 +110,7 @@ body {
 .form-grid input {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #D9AA71;
     border-radius: 5px;
     width: 100%;
 }
@@ -118,8 +118,8 @@ body {
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #D9AA71;
+    color: #142B40;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
@@ -128,14 +128,15 @@ body {
 
 .why-choose {
     padding: 80px 0;
-    background-color: #f5f5f5;
-    text-align: center;
+    background-color: #142B40;
+ text-align: center;
 }
 
 .why-choose h2 {
     font-size: 36px;
     margin-bottom: 40px;
     text-transform: uppercase;
+    color: #D9AA71;
 }
 
 .reasons {
@@ -145,10 +146,10 @@ body {
 }
 
 .reason {
-    background-color: #FFFFFF;
+    background-color: #142B40;
     padding: 30px;
     border-radius: 10px;
-    color: #000000;
+    color: #D9AA71;
 }
 
 .reason h3 {
@@ -165,6 +166,7 @@ body {
     font-size: 36px;
     margin-bottom: 40px;
     text-transform: uppercase;
+    color: #142B40;
 }
 
 .steps {
@@ -181,8 +183,8 @@ body {
 .step-number {
     width: 40px;
     height: 40px;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #D9AA71;
+    color: #142B40;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -194,15 +196,16 @@ body {
 .step h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #142B40;
 }
 
 .step p {
-    color: #808080;
+    color: #D9AA71;
 }
 
 .testimonials {
     padding: 80px 0;
-    background-color: #f5f5f5;
+    background-color: #142B40;
     text-align: center;
 }
 
@@ -210,11 +213,12 @@ body {
     font-size: 36px;
     margin-bottom: 10px;
     text-transform: uppercase;
+    color: #D9AA71;
 }
 
 .subtitle {
     font-size: 18px;
-    color: #808080;
+    color: #D9AA71;
     margin-bottom: 40px;
 }
 
@@ -226,7 +230,7 @@ body {
 }
 
 .testimonial-card {
-    background-color: #FFFFFF;
+    background-color: #142B40;
     padding: 30px;
     border-radius: 10px;
 }
@@ -234,11 +238,11 @@ body {
 .testimonial-card p {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #000000;
+    color: #D9AA71;
 }
 
 .rating {
-    color: #FFD700;
+    color: #D9AA71;
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -246,12 +250,12 @@ body {
 .testimonial-card span {
     display: block;
     font-size: 14px;
-    color: #808080;
+    color: #D9AA71;
 }
 
 .footer {
-    background-color: #808080;
-    color: #FFFFFF;
+    background-color: #142B40;
+    color: #D9AA71;
     padding: 60px 0 20px;
 }
 
@@ -271,6 +275,7 @@ body {
 .footer-newsletter h3 {
     font-size: 20px;
     margin-bottom: 20px;
+    color: #D9AA71;
 }
 
 .footer-links ul {
@@ -279,7 +284,7 @@ body {
 }
 
 .footer-links a {
-    color: #FFFFFF;
+    color: #D9AA71;
     text-decoration: none;
     line-height: 2;
 }
@@ -292,14 +297,14 @@ body {
 .footer-newsletter input {
     padding: 10px;
     width: 70%;
-    border: none;
+    border: 1px solid #D9AA71;
     border-radius: 5px;
 }
 
 .footer-newsletter button {
     padding: 10px 20px;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #D9AA71;
+    color: #142B40;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -307,7 +312,7 @@ body {
 
 .footer-bottom {
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #D9AA71;
     padding-top: 20px;
 }
 

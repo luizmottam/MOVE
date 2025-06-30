@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOVE - Mobility On Demand</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a2e00c56b5.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 fixed w-full z-10 top-0 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-green-400">MOVE</h1>
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="#home" class="hover:text-green-400">Início</a></li>
+          <li><a href="#sobre" class="hover:text-green-400">Sobre Nós</a></li>
+          <li><a href="#como-funciona" class="hover:text-green-400">Como Funciona</a></li>
+          <li><a href="#contato" class="hover:text-green-400">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center text-center px-4 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1603462745164-cf2035f71a8f');">
+      <div class="bg-black bg-opacity-60 p-10 rounded-xl">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">M.O.V.E</h2>
+        <p class="text-gray-300 mb-6">Mobility On-demand for Versatility Experience</p>
+        <a href="#veiculos" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">Explorar Veículos</a>
+      </div>
+    </section>
+
+    <!-- Por que escolher o MOVE -->
+    <section class="py-20 px-6 md:px-20 bg-gray-800">
+      <h3 class="text-3xl font-bold text-green-400 mb-10 text-center">Por que escolher o M.O.V.E</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="text-xl font-semibold text-white mb-2">Equipamentos Premium</h4>
+          <p class="text-gray-300">Oferecemos apenas lanchas, jets, UTVs e quadriciclos de alta qualidade e performance.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-white mb-2">Reserva 100% Digital</h4>
+          <p class="text-gray-300">Todo o processo de aluguel pode ser feito online, sem burocracia e com segurança.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-white mb-2">Suporte 24/7</h4>
+          <p class="text-gray-300">Nossa equipe está sempre disponível para ajudar com qualquer dúvida ou emergência.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-white mb-2">Manutenção Garantida</h4>
+          <p class="text-gray-300">Todos os veículos passam por rigorosa inspeção e manutenção antes de cada locação.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="py-20 px-6 md:px-20 bg-gray-900">
+      <h3 class="text-3xl font-bold text-green-400 mb-10 text-center">Como Funciona</h3>
+      <ol class="space-y-6 max-w-3xl mx-auto text-gray-300 list-decimal list-inside">
+        <li>
+          <strong>Escolha seu veículo:</strong> Navegue por nossas lanchas, jets, UTVs e quadriciclos e escolha o ideal para sua aventura.
+        </li>
+        <li>
+          <strong>Selecione o período:</strong> Escolha por quanto tempo você deseja alugar, com opções de horas, dias ou semanas.
+        </li>
+        <li>
+          <strong>Faça o pagamento:</strong> Utilize nosso sistema seguro de pagamento com diversas opções e facilidades.
+        </li>
+        <li>
+          <strong>Aproveite sua experiência:</strong> Receba instruções detalhadas e aproveite ao máximo sua aventura premium.
+        </li>
+      </ol>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-10 px-6 md:px-20 text-gray-400">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div>
+          <h4 class="text-white text-xl font-bold mb-2">M.O.V.E</h4>
+          <p>Mobility On-demand for Versace Experience</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-2">Links Rápidos</h4>
+          <ul class="space-y-1">
+            <li><a href="#home" class="hover:text-green-400">Início</a></li>
+            <li><a href="#sobre" class="hover:text-green-400">Sobre Nós</a></li>
+            <li><a href="#como-funciona" class="hover:text-green-400">Como Funciona</a></li>
+            <li><a href="#contato" class="hover:text-green-400">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-2">Categorias</h4>
+          <ul class="space-y-1">
+            <li>Jets</li>
+            <li>Lanchas</li>
+            <li>UTVs</li>
+            <li>Quadriciclos</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-2">Receba Novidades</h4>
+          <p>Cadastre-se para receber ofertas exclusivas e novidades.</p>
+          <input type="email" placeholder="Seu e-mail" class="mt-3 w-full px-3 py-2 rounded bg-gray-700 text-white border border-gray-600">
+          <button class="mt-2 w-full px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded">Enviar</button>
+        </div>
+      </div>
+      <p class="text-center text-sm mt-10">&copy; 2025 MOVE. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

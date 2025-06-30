@@ -1,110 +1,185 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MOVE - Mobility On Demand</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/a2e00c56b5.js" crossorigin="anonymous"></script>
-  </head>
-  <body class="bg-gray-900 text-white font-sans">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVE - Mobility On-demand for Versatility Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <!-- Navbar -->
-    <nav class="bg-gray-800 fixed w-full z-10 top-0 shadow-md">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-green-400">MOVE</h1>
-        <ul class="flex space-x-6 text-sm font-medium">
-          <li><a href="#home" class="hover:text-green-400">Início</a></li>
-          <li><a href="#sobre" class="hover:text-green-400">Sobre Nós</a></li>
-          <li><a href="#como-funciona" class="hover:text-green-400">Como Funciona</a></li>
-          <li><a href="#contato" class="hover:text-green-400">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="MOVE Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#lanchas">Lanchas</a></li>
+                <li><a href="#jets">Jets</a></li>
+                <li><a href="#utvs">UTVs</a></li>
+                <li><a href="#quadriciclos">Quadriciclos</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="h-screen flex items-center justify-center text-center px-4 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1603462745164-cf2035f71a8f');">
-      <div class="bg-black bg-opacity-60 p-10 rounded-xl">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4">M.O.V.E</h2>
-        <p class="text-gray-300 mb-6">Mobility On-demand for Versatility Experience</p>
-        <a href="#veiculos" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">Explorar Veículos</a>
-      </div>
+    <!-- Hero Section com Sistema de Reserva -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>M.O.V.E</h1>
+            <p>Mobility On-demand for Versatility Experience</p>
+            <div class="hero-form">
+                <h2>EXPERIÊNCIA DISPONÍVEL EM ÁGUAS E TRILHAS</h2>
+                <div class="form-grid">
+                    <select name="vehicle" id="vehicle">
+                        <option value="">Todos os veículos</option>
+                        <option value="jet-ski">Jet Ski</option>
+                        <option value="lancha">Lancha</option>
+                        <option value="utv">UTV</option>
+                        <option value="quadriciclo">Quadriciclo</option>
+                    </select>
+                    <input type="date" name="start-date" id="start-date">
+                    <input type="date" name="end-date" id="end-date">
+                </div>
+                <a href="#" class="btn" onclick="checkAvailability()">ALUGAR AGORA →</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Por que escolher o MOVE -->
-    <section class="py-20 px-6 md:px-20 bg-gray-800">
-      <h3 class="text-3xl font-bold text-green-400 mb-10 text-center">Por que escolher o M.O.V.E</h3>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <h4 class="text-xl font-semibold text-white mb-2">Equipamentos Premium</h4>
-          <p class="text-gray-300">Oferecemos apenas lanchas, jets, UTVs e quadriciclos de alta qualidade e performance.</p>
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2>Por que escolher o M.O.V.E</h2>
+            <div class="reasons">
+                <div class="reason">
+                    <h3>Equipamentos Premium</h3>
+                    <p>Oferecemos apenas lanchas, jets, UTVs e quadriciclos de alta qualidade e performance.</p>
+                </div>
+                <div class="reason">
+                    <h3>Reserva 100% Digital</h3>
+                    <p>Todo o processo de aluguel pode ser feito online, sem burocracia e com segurança.</p>
+                </div>
+                <div class="reason">
+                    <h3>Suporte 24/7</h3>
+                    <p>Nossa equipe está sempre disponível para ajudar com qualquer dúvida ou emergência.</p>
+                </div>
+                <div class="reason">
+                    <h3>Manutenção Garantida</h3>
+                    <p>Todos os veículos passam por rigorosa inspeção e manutenção antes de cada locação.</p>
+                </div>
+            </div>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold text-white mb-2">Reserva 100% Digital</h4>
-          <p class="text-gray-300">Todo o processo de aluguel pode ser feito online, sem burocracia e com segurança.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold text-white mb-2">Suporte 24/7</h4>
-          <p class="text-gray-300">Nossa equipe está sempre disponível para ajudar com qualquer dúvida ou emergência.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold text-white mb-2">Manutenção Garantida</h4>
-          <p class="text-gray-300">Todos os veículos passam por rigorosa inspeção e manutenção antes de cada locação.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Como Funciona -->
-    <section id="como-funciona" class="py-20 px-6 md:px-20 bg-gray-900">
-      <h3 class="text-3xl font-bold text-green-400 mb-10 text-center">Como Funciona</h3>
-      <ol class="space-y-6 max-w-3xl mx-auto text-gray-300 list-decimal list-inside">
-        <li>
-          <strong>Escolha seu veículo:</strong> Navegue por nossas lanchas, jets, UTVs e quadriciclos e escolha o ideal para sua aventura.
-        </li>
-        <li>
-          <strong>Selecione o período:</strong> Escolha por quanto tempo você deseja alugar, com opções de horas, dias ou semanas.
-        </li>
-        <li>
-          <strong>Faça o pagamento:</strong> Utilize nosso sistema seguro de pagamento com diversas opções e facilidades.
-        </li>
-        <li>
-          <strong>Aproveite sua experiência:</strong> Receba instruções detalhadas e aproveite ao máximo sua aventura premium.
-        </li>
-      </ol>
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Como Funciona</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Escolha seu veículo</h3>
+                    <p>Navegue por nossas lanchas, jets, UTVs e quadriciclos e escolha o ideal para sua aventura.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Selecione o período</h3>
+                    <p>Escolha por quanto tempo você deseja alugar, com opções de horas, dias ou semanas.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Faça o pagamento</h3>
+                    <p>Utilize nosso sistema seguro de pagamento com diversas opções e facilidades.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Aproveite sua experiência</h3>
+                    <p>Receba instruções detalhadas e aproveite ao máximo sua aventura premium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>O QUE NOSSOS CLIENTES DIZEM</h2>
+            <p class="subtitle">Conheça as avaliações reais de quem já aproveitou nossos serviços de aluguel</p>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Aluguei uma lancha para comemorar meu aniversário e foi uma experiência incrível. Equipamento impecável e atendimento de primeira."</p>
+                    <div class="rating">★★★★★</div>
+                    <span>Lancha Phantom 303</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Os quadriciclos do M.O.V.E são fantásticos! Passei um final de semana explorando trilhas e a experiência superou todas as expectativas."</p>
+                    <div class="rating">★★★★★</div>
+                    <span>Quadriciclo Honda TRX</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Aluguei jets para um evento corporativo de team building e foi um sucesso absoluto. Equipamentos novos e processo de reserva simplificado."</p>
+                    <div class="rating">★★★★★</div>
+                    <span>Jet Ski Sea-Doo GTX</span>
+                </div>
+            </div>
+            <a href="#" class="btn">VER MAIS DEPOIMENTOS</a>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 py-10 px-6 md:px-20 text-gray-400">
-      <div class="grid md:grid-cols-4 gap-10">
-        <div>
-          <h4 class="text-white text-xl font-bold mb-2">M.O.V.E</h4>
-          <p>Mobility On-demand for Versace Experience</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="MOVE Logo">
+                    <p>Mobility On-demand for Versatility Experience</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Inscreva-se para receber novidades e promoções exclusivas</p>
+                    <form>
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MOVE. Todos os direitos reservados.</p>
+            </div>
         </div>
-        <div>
-          <h4 class="text-white font-semibold mb-2">Links Rápidos</h4>
-          <ul class="space-y-1">
-            <li><a href="#home" class="hover:text-green-400">Início</a></li>
-            <li><a href="#sobre" class="hover:text-green-400">Sobre Nós</a></li>
-            <li><a href="#como-funciona" class="hover:text-green-400">Como Funciona</a></li>
-            <li><a href="#contato" class="hover:text-green-400">Contato</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-2">Categorias</h4>
-          <ul class="space-y-1">
-            <li>Jets</li>
-            <li>Lanchas</li>
-            <li>UTVs</li>
-            <li>Quadriciclos</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-2">Receba Novidades</h4>
-          <p>Cadastre-se para receber ofertas exclusivas e novidades.</p>
-          <input type="email" placeholder="Seu e-mail" class="mt-3 w-full px-3 py-2 rounded bg-gray-700 text-white border border-gray-600">
-          <button class="mt-2 w-full px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded">Enviar</button>
-        </div>
-      </div>
-      <p class="text-center text-sm mt-10">&copy; 2025 MOVE. Todos os direitos reservados.</p>
     </footer>
-  </body>
+
+    <script>
+        function checkAvailability() {
+            const vehicle = document.getElementById('vehicle').value;
+            const startDate = document.getElementById('start-date').value;
+            const endDate = document.getElementById('end-date').value;
+
+            fetch('/check-availability', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ vehicle, startDate, endDate })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+            });
+        }
+    </script>
+</body>
 </html>

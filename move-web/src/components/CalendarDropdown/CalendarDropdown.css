@@ -1,0 +1,44 @@
+.calendar-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: sans-serif;
+}
+
+.input-like {
+  padding: 12px;
+  border-radius: 0px 999px 999px 0px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.calendar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+  z-index: 999;
+  padding: 20px;
+}
+
+.calendar-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.calendar-tabs button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.calendar-tabs .active {
+  background: #ccc;
+}

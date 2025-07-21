@@ -1,0 +1,45 @@
+.booking-content {
+    background-color: #20344c;
+    padding: 1rem;
+    border-radius: 18px;
+    align-items: start;
+    text-align: left;
+    width: 45rem;
+    height: 11.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.booking-content p{
+    color: white;
+    line-height: 0%;
+}
+
+.booking-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.booking h1 {
+    font-size: 60pt;
+    line-height: 0%;
+}
+.booking p {
+    font-size: 20pt;
+}
+
+.button-booking {
+    background-color: #e0ac74;
+    border-radius: 999px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 12pt;
+    border: none;
+    cursor: pointer;
+}
+
+.button-booking:hover {
+    padding: 1.1rem 2.1rem;
+    font-size: 13pt;
+}

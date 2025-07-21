@@ -1,0 +1,40 @@
+.logo {
+  height: 40px;
+}
+
+.header-list,
+.header-logo,
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+
+.header-logo {
+  gap: 0.5rem;
+}
+
+.header-list {
+  gap: 1rem;
+}
+
+.header-list li {
+  list-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header-nav {
+    justify-content: space-between;
+}
+
+.login-button {
+  cursor: pointer;
+  width: 5rem;
+  padding: 0.5rem;
+  border-radius: 51px;
+}
+
+.login-button:hover {
+  padding: 0.6rem 0.7rem;
+}

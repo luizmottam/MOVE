@@ -4,7 +4,7 @@
     border-radius: 18px;
     align-items: start;
     text-align: left;
-    width: 45rem;
+    width: 42rem;
     height: 11.8rem;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,7 @@
 .booking-content p{
     color: white;
     line-height: 0%;
+    font-size: 10pt;
 }
 
 .booking-buttons {
@@ -22,7 +23,7 @@
 }
 
 .booking h1 {
-    font-size: 60pt;
+    font-size: 50pt;
     line-height: 0%;
 }
 .booking p {

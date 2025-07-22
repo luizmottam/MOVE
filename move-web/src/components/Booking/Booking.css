@@ -1,5 +1,5 @@
 .booking-content {
-    background-color: #20344c;
+    background-color: #142B40;
     padding: 1rem;
     border-radius: 18px;
     align-items: start;
@@ -12,7 +12,7 @@
 }
 
 .booking-content p{
-    color: white;
+    color: #D9AA71;
     line-height: 0%;
     font-size: 10pt;
 }

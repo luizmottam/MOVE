@@ -1,3 +1,7 @@
+.header-container {
+  padding: 1rem 3rem;
+}
+
 .logo {
   height: 40px;
 }
@@ -8,7 +12,6 @@
   display: flex;
   align-items: center;
 }
-
 
 .header-logo {
   gap: 0.5rem;
@@ -25,16 +28,20 @@
 }
 
 .header-nav {
-    justify-content: space-between;
-}
-
-.login-button {
-  cursor: pointer;
-  width: 5rem;
-  padding: 0.5rem;
-  border-radius: 51px;
+  justify-content: space-between;
 }
 
 .login-button:hover {
-  padding: 0.6rem 0.7rem;
+  transform: scale(1.03);
+}
+
+.login-button {
+  background-color: #e2b679;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }

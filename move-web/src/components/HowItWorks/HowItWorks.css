@@ -1,0 +1,60 @@
+.how-it-works {
+  padding: 5rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.how-it-works .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d2235;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1 1 200px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-number {
+  background-color: #d9a15b;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.step h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0d2235;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.step p {
+  color: #d6a77a;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}

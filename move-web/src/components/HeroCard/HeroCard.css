@@ -1,0 +1,19 @@
+
+
+.hero-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.hero-card {
+  flex: 1 1 15rem;
+  max-width: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}

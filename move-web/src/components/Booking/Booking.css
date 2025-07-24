@@ -11,7 +11,7 @@
 }
 
 .booking {
-  padding: 2rem;
+  padding: 2rem 0rem;
   text-align: left;
   display: flex;
   flex-direction: column;

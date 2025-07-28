@@ -2,8 +2,15 @@ import "./Booking.css";
 import Dropdown from "../Dropdown"
 import CalendarDropdown from "../CalendarDropdown";
 import SearchDropdown from "../SearchDropdown";
+import { useNavigate } from "react-router-dom";
 
 const Booking = () => {
+const navigate = useNavigate();
+
+function handleClickCheckout(link) {
+  navigate(link);
+}
+
   return (
     <div className="booking">
       <h1>M.O.V.E</h1>
@@ -15,7 +22,7 @@ const Booking = () => {
             <Dropdown/>
             <CalendarDropdown/>
         </div>
-        <input type="button" value="RESEVAR" className="button-booking"/>
+        <input type="button" value="RESEVAR" className="button-booking" onClick={() => handleClickCheckout("/checkout")}/>
       </div>
     </div>
   );

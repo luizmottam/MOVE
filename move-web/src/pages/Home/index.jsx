@@ -81,7 +81,10 @@ const Home = () => {
           </div>
         </div>
         <section className="hero-section">
-          <HeroSection title="Por que escolher o M.O.V.E?" heroCards={heroCards} />
+          <HeroSection
+            title="Por que escolher o M.O.V.E?"
+            heroCards={heroCards}
+          />
         </section>
         <HowItWorks />
         <Testimonials />

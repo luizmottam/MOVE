@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Lancha",
+    "description": "Navegue com liberdade e conforto.",
+    "image": "https://images.unsplash.com/photo-1680868543815-b8666dba60f7?auto=format&fit=crop&w=320&q=80"
+  },
+  {
+    "title": "Quadriciclo",
+    "description": "Aventura garantida nas trilhas!",
+    "image": "https://images.unsplash.com/photo-1615212049275-8cc452b7a2f4?auto=format&fit=crop&w=320&q=80"
+  },
+  {
+    "title": "Jet Ski",
+    "description": "Velocidade nas águas com segurança.",
+    "image": "https://images.unsplash.com/photo-1623065432702-884e5a8f2281?auto=format&fit=crop&w=320&q=80"
+  }
+]

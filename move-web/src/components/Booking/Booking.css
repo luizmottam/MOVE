@@ -12,10 +12,11 @@
 
 .booking {
   padding: 2rem 0rem;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  color: var(--primary-color);
 }
 
 .booking h1 {

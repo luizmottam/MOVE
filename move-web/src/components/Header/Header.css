@@ -1,5 +1,7 @@
 .header-container {
   padding: 1rem 3rem;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .logo {
@@ -19,6 +21,7 @@
 
 .header-list {
   gap: 1rem;
+  flex-direction: row;
 }
 
 .header-list li {

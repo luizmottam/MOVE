@@ -1,18 +1,33 @@
 .how-it-works {
-  padding: 5rem 2rem;
   background-color: #fff;
   text-align: center;
+  background-size: cover;
+
+  background-image: url("./background-duna.png");
+  margin: 0;
+}
+
+.how-it-works {
+  margin: 0; /* Ok */
+  padding: 0; /* Adicione se necessário */
+}
+
+
+.how-it-works .container {
+  margin: 0 auto; /* Isso centraliza horizontalmente */
+  padding: 5rem 2rem; /* Esse padding interno está OK para espaçamento interno */
 }
 
 .how-it-works .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 5rem 2rem;
 }
 
 .how-it-works h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #0d2235;
+  color: white;
   margin-bottom: 4rem;
   text-transform: uppercase;
 }
@@ -30,6 +45,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  border-radius: 18px;
+  padding: 1em;
 }
 
 .step-number {
@@ -53,7 +71,6 @@
 }
 
 .step p {
-  color: #d6a77a;
   font-size: 1rem;
   line-height: 1.5;
   text-align: center;

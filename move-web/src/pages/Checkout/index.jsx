@@ -4,6 +4,7 @@ export default function Checkout() {
   return (
     <>
       <SidebarCheckout/>
+      
     </>
   );
 }

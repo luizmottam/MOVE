@@ -65,7 +65,6 @@ const Home = () => {
       <div className="home-content">
         <div className="booking-container">
           <Booking />
-          <ProductsCard />
         </div>
         <div className="category-container">
           <div className="category-cards">

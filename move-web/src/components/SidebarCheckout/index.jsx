@@ -18,7 +18,7 @@ export default function SidebarCheckout() {
       {/* Logo */}
       <div>
         <div className="mb-6 font-bold text-lg flex items-center gap-2 mb-4">
-          <span className='logo-name'>M.O.V.E Reserva</span>
+          <span className='logo-name'>M.O.V.E</span>
         </div>
 
         {/* Steps */}

@@ -9,6 +9,7 @@
   cursor: pointer;
   font-size: 16px;
   outline: none;
+  background-color: white;
 }
 
 .dropdown-menu {

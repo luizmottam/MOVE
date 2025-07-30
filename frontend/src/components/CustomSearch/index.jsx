@@ -36,13 +36,13 @@ const CustomSearch = (props) => {
           }}
           onFocus={() => setOpen(true)}
           onBlur={() => setTimeout(() => setOpen(false), 200)} // permite clicar no dropdown
-          className="bg-white py-3 ps-10 pe-4 w-full rounded-lg sm:text-sm focus:outline-none"
+          className="bg-[var(--primary-color-variant)] py-3 ps-10 pe-4 w-full rounded-lg sm:text-sm focus:outline-none"
         />
       </div>
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute z-10 mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg max-h-72 overflow-y-auto">
+        <div className="absolute z-10 mt-1 w-full bg-[var(--primary-color-variant)] border border-gray-200 rounded-lg shadow-lg max-h-72 overflow-y-auto">
           {filteredOptions.length === 0 && (
             <p className="p-4 text-sm text-gray-500">
               Nenhum município encontrado.
@@ -54,7 +54,7 @@ const CustomSearch = (props) => {
               key={`${item.label}-${index}`}
               onClick={() => {
                 setSelected(item);
-                setQuery(item.label);
+                setQuery(item.label + ', ' + item.description);
                 setOpen(false);
               }}
               className={`flex w-full items-center justify-between px-4 py-2 text-sm text-left hover:bg-gray-100 ${

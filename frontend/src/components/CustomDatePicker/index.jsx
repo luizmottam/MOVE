@@ -32,7 +32,7 @@ export default function CustomDatePicker() {
       {/* Botão estilo input */}
       <button
         onClick={toggleDropdown}
-        className="w-auto py-3 px-4 text-left bg-white rounded-lg text-sm text-gray-800 focus:outline-none"
+        className="w-auto py-3 px-4 text-left bg-[var(--primary-color-varinat)] rounded-lg text-sm text-gray-800 focus:outline-none"
       >
         {range.from
           ? `${formatDate(range.from)} → ${formatDate(range.to)}`
@@ -41,7 +41,7 @@ export default function CustomDatePicker() {
 
       {/* Dropdown */}
       {isOpen && (
-        <div className="absolute mt-2 z-50 bg-white border border-gray-200 rounded-lg shadow-lg p-4">
+        <div className="absolute mt-2 z-50 bg-white border border-gray-200 rounded-lg shadow-lg p-4 ">
           <div className="mb-4 text-sm font-medium text-gray-600">
             Selecione o intervalo
           </div>
@@ -53,8 +53,7 @@ export default function CustomDatePicker() {
             onSelect={setRange}
             locale="pt-BR"
             weekStartsOn={0}
-            className="text-sm"
-            disabled={{ before: new Date() }} // 🚫 desabilita datas passadas
+            disabled={{ before: new Date() }}
           />
         </div>
       )}

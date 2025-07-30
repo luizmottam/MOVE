@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate} from 'react-router-dom'
 import "./HeroAlugel.css";
 
 import CustomSelect from "../../../components/CustomSelect";
@@ -12,6 +13,7 @@ const backgrounds = ["bg-duna", "bg-lancha"];
 
 export default function HeroAlugel() {
   const [bgClass, setBgClass] = useState(backgrounds[0]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,9 +29,9 @@ export default function HeroAlugel() {
 
   return (
     <div
-      className={`hero-booking min-h-screen flex items-center justify-center bg-white transition-all duration-1000 ease-in-out ${bgClass}`}
+      className={`hero-booking flex items-center justify-center bg-[var(--primary-color-variant)] transition-all duration-1000 ease-in-out ${bgClass}`}
     >
-      <div className="text-center px-4 w-full">
+      <div className="text-center px-4 w-full m-[6rem]">
         <div className="max-w-[50rem] mx-auto">
           <h1 className="mb-5 text-5xl font-bold">M.O.V.E</h1>
           <p className="mb-6">Mobility On-demand for Versatility Experience</p>
@@ -39,7 +41,7 @@ export default function HeroAlugel() {
               EXPERIÊNCIA DISPONÍVEL EM ÁGUAS E TRILHAS
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-0 w-full justify-center items-center bg-white rounded-lg border border-gray-400">
+            <div className="flex flex-col sm:flex-row gap-0 w-full justify-center items-center bg-[var(--primary-color-variant)] rounded-lg border border-gray-400">
               <div className="w-full sm:w-1/3">
                 <CustomSearch />
               </div>
@@ -50,6 +52,8 @@ export default function HeroAlugel() {
                 <CustomDatePicker />
               </div>
             </div>
+
+            <button className="text-lg text-[var(--primary-color-variant)] font-bold bg-[var(--second-color)] py-[0.5rem] px-[3rem] rounded-full hover:scale-105 hover" onClick={() => navigate('./alugel/')}>Reservar</button>
           </div>
         </div>
       </div>

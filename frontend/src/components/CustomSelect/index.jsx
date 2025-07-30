@@ -29,7 +29,7 @@ const CustomSelect = ({ options }) => {
       <button
         onClick={() => setOpen((prev) => !prev)}
         type="button"
-        className="relative py-3 ps-4 pe-9 w-full flex items-center justify-between text-sm bg-white border border-transparent hover:border-gray-200 rounded-lg focus:outline-none"
+        className="relative py-3 ps-4 pe-9 w-full flex items-center justify-between text-sm bg-[var(--primary-color-variant)] border border-transparent hover:border-gray-200 rounded-lg focus:outline-none"
         aria-haspopup="listbox"
         aria-expanded={open}
       >
@@ -40,7 +40,7 @@ const CustomSelect = ({ options }) => {
       {open && (
         <ul
           role="listbox"
-          className="absolute z-10 mt-2 w-full max-h-60 overflow-y-auto bg-white border border-gray-200 rounded-lg shadow-lg p-1 space-y-0.5 text-sm"
+          className="absolute z-10 mt-2 w-full max-h-60 overflow-y-auto bg-[var(--primary-color-variant)] border border-gray-200 rounded-lg shadow-lg p-1 space-y-0.5 text-sm"
           tabIndex={-1}
         >
           {options.map((option) => (

@@ -1,15 +1,14 @@
-import "./Header.css";
-
 // Componente de Logo
 const Logo = ({ iconLogo, nameLogo }) => (
-  <div className="flex items-center gap-x-2">
-    <img src={iconLogo} alt={`${nameLogo} logo`} className="h-10" />
-    <a
-      href="#"
-      className="text-3xl font-semibold focus:outline-none focus:opacity-80"
-    >
+  <div className="flex items-center gap-x-2 cursor-pointer">
+    <img
+      src={iconLogo}
+      alt={`${nameLogo} logo`}
+      className="h-10 hover:opacity-80"
+    />
+    <span className="text-3xl font-semibold focus:outline-none hover:opacity-80">
       {nameLogo}
-    </a>
+    </span>
   </div>
 );
 
@@ -26,11 +25,11 @@ const Login = () => (
     <button
       type="button"
       className="py-2 px-4 inline-flex items-center gap-x-2
-                 font-medium text-white
+                 font-medium text-[var(--primary-color-variant)]
                  bg-[var(--second-color)] border border-transparent rounded-full
                  shadow-2xs
                  hover:bg-[var(--second-color-hover)] hover:scale-105
-                 cursor-pointer transition-[background] duration-300 ease-in-out"
+                 cursor-pointer transition-[background] duration-300 ease-in-out delay-2"
     >
       Cadastrar
     </button>
@@ -44,7 +43,7 @@ const Pages = ({ pages }) => (
       <a
         key={namePage}
         href={linkPage}
-        className="font-medium text-white-800 hover:text-gray-400 focus:outline-none focus:text-gray-400
+        className="font-medium text-[var(primary-color-variant)]-800 hover:text-gray-400 focus:outline-none focus:text-gray-400
                    dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
       >
         {namePage}
@@ -64,7 +63,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-white dark:bg-neutral-800">
+    <header className="bg-[var(--primary-color)] dark:bg-neutral-800 text-[var(--primary-color-variant)]">
       <nav className="text-lg w-full max-w-[95%] mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
         {/* Logo */}
         <Logo iconLogo={iconLogo} nameLogo={nameLogo} />

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Lancha",
+    "description": "Navegue com liberdade e conforto.",
+    "image": "./src/assets/veicles-images/lancha.png",
+    "backgroundImage": "./src/assets//background-cards/background-lancha-card.png"
+  },
+  {
+    "title": "Jet Ski",
+    "description": "Liberdade e adrenalina sobre as ondas",
+    "image": "./src/assets/veicles-images/jetski.png",
+    "backgroundImage": "./src/assets/background-cards/background-jetski-card.png"
+  },
+  {
+    "title": "Quadriciclo",
+    "description": "Aventura em qualquer terreno",
+    "image": "./src/assets/veicles-images/quadri.png",
+    "backgroundImage": "./src/assets/background-cards/background-quadri-card.png"
+  },
+  {
+    "title": "UTV",
+    "description": "Off-road com tração e conforto para todo",
+    "image": "./src/assets/veicles-images/utv.png",
+    "backgroundImage": "./src/assets/background-cards/background-utv-card.png"
+  }
+]

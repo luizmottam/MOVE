@@ -1,12 +1,93 @@
-# React + Vite
+# M.O.V.E
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MOVE é uma plataforma digital para aluguel de veículos de lazer — como jet skis, lanchas, UTVs e quadriciclos — conectando usuários a experiências sob demanda com conveniência, segurança e alto padrão.
 
-Currently, two official plugins are available:
+## Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![MOVE Screenshot](public/logo.jpg)
 
-## Expanding the ESLint configuration
+Acesse a página principal e navegue pelas seções:
+- Escolha seu veículo
+- Selecione o período
+- Faça o pagamento
+- Aproveite sua experiência
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Formulário de reserva disponível na seção principal, com seleção de veículo, datas e botão para verificar disponibilidade.
+
+## Tecnologias Utilizadas
+
+- **React** + **Vite**  
+- **Tailwind CSS**  
+- **Lucide React** (ícones)
+- **JavaScript**  
+- **HTML5**  
+- **CSS3**
+
+## Bibliotecas Instaladas
+
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide React](https://lucide.dev/)
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [eslint](https://eslint.org/)  
+- Outras dependências padrão do React/Vite
+
+## Estrutura do Projeto
+
+```
+frontend/
+  ├── public/
+  │   └── favicon.svg, logo.jpg
+  ├── src/
+  │   ├── App.jsx, App.css, main.jsx, index.css
+  │   ├── assets/
+  │   ├── components/
+  │   └── pages/
+  ├── data/
+  │   ├── cards.json
+  │   ├── categorias.json
+  │   └── cidades.json
+  ├── package.json
+  ├── tailwind.config.js
+  ├── vite.config.js
+  └── README.md
+```
+
+## Seções Desenvolvidas
+
+- **Navbar**: Navegação entre as principais categorias de veículos.
+- **Hero Section**: Apresentação da plataforma e formulário de reserva.
+- **Por que escolher o M.O.V.E**: Vantagens e diferenciais.
+- **Como Funciona**: Passo a passo do processo de aluguel.
+- **Depoimentos**: Avaliações reais de clientes.
+- **Footer**: Informações institucionais, links rápidos e newsletter.
+
+## Como Executar
+
+1. Instale as dependências:
+   ```sh
+   npm install
+   ```
+2. Inicie o projeto:
+   ```sh
+   npm run dev
+   ```
+3. Acesse `http://localhost:5173` no navegador.
+
+## Futuras Melhorias
+
+- Implementar autenticação de usuários.
+- Integração com sistemas de pagamento online.
+- Dashboard para gerenciamento de reservas.
+- Sistema de avaliação com comentários.
+- Responsividade aprimorada para dispositivos móveis.
+- API para consulta de disponibilidade em tempo real.
+- Adicionar mais categorias de veículos e experiências.
+
+## Contato
+
+Para dúvidas ou sugestões, envie um e-mail para contato@move.com.br
+
+---
+
+&copy; 2023 MOVE. Todos os direitos reservados.

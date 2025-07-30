@@ -64,11 +64,11 @@ frontend/
 
 ## Como Executar
 
-1. Instale as dependências:
+1. Instale as dependências gerais:
    ```sh
    npm install
    ```
-2. Instale as dependências:
+2. Instale as dependências do projeto:
    ```sh
    npm install tailwindcss @tailwindcss/vite lucide-react react-router-dom
    ```

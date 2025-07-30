@@ -68,11 +68,15 @@ frontend/
    ```sh
    npm install
    ```
-2. Inicie o projeto:
+2. Instale as dependências:
+   ```sh
+   npm install tailwindcss @tailwindcss/vite lucide-react react-router-dom
+   ```
+3. Inicie o projeto:
    ```sh
    npm run dev
    ```
-3. Acesse `http://localhost:5173` no navegador.
+4. Acesse `http://localhost:5173` no navegador.
 
 ## Futuras Melhorias
 
@@ -86,8 +90,8 @@ frontend/
 
 ## Contato
 
-Para dúvidas ou sugestões, envie um e-mail para contato@move.com.br
+Para dúvidas ou sugestões, envie um e-mail para contato@exemplo.com.br
 
 ---
 
-&copy; 2023 MOVE. Todos os direitos reservados.
+&copy; 2024 MOVE. Todos os direitos reservados.

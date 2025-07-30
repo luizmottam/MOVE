@@ -4,7 +4,7 @@ MOVE é uma plataforma digital para aluguel de veículos de lazer — como jet s
 
 ## Demonstração
 
-![MOVE Screenshot](./public/MOVE.mp4)
+https://github.com/user-attachments/assets/58093d23-c360-4300-83bc-0475b4182577
 
 Acesse a página principal e navegue pelas seções:
 - Escolha seu veículo

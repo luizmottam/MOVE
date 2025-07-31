@@ -4,9 +4,9 @@ const Logo = ({ iconLogo, nameLogo }) => (
     <img
       src={iconLogo}
       alt={`${nameLogo} logo`}
-      className="h-10 hover:opacity-80"
+      className="h-8 sm:h-10 hover:opacity-80 transition-opacity"
     />
-    <span className="text-3xl font-semibold focus:outline-none hover:opacity-80">
+    <span className="text-2xl sm:text-3xl font-semibold hover:opacity-80">
       {nameLogo}
     </span>
   </div>
@@ -14,22 +14,20 @@ const Logo = ({ iconLogo, nameLogo }) => (
 
 // Componente de Login/Cadastro
 const Login = () => (
-  <div className="flex items-center gap-x-6">
+  <div className="flex items-center gap-x-4 sm:gap-x-6 mt-3 sm:mt-0">
     <a
       href="#"
-      className="font-medium hover:text-gray-400 focus:outline-none focus:text-gray-400
-                 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+      className="text-sm sm:text-base font-medium hover:text-gray-400 focus:outline-none focus:text-gray-400"
     >
       Entrar
     </a>
     <button
       type="button"
-      className="py-2 px-4 inline-flex items-center gap-x-2
+      className="py-1.5 sm:py-2 px-4 text-sm sm:text-base inline-flex items-center gap-x-2
                  font-medium text-[var(--primary-color-variant)]
                  bg-[var(--second-color)] border border-transparent rounded-full
-                 shadow-2xs
-                 hover:bg-[var(--second-color-hover)] hover:scale-105
-                 cursor-pointer transition-[background] duration-300 ease-in-out delay-2"
+                 shadow-2xs hover:bg-[var(--second-color-hover)] hover:scale-105
+                 transition-all duration-300"
     >
       Cadastrar
     </button>
@@ -43,8 +41,7 @@ const Pages = ({ pages }) => (
       <a
         key={namePage}
         href={linkPage}
-        className="font-medium text-[var(primary-color-variant)]-800 hover:text-gray-400 focus:outline-none focus:text-gray-400
-                   dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+        className="font-medium text-[var(--primary-color-variant)] hover:text-gray-400 focus:outline-none"
       >
         {namePage}
       </a>
@@ -52,7 +49,7 @@ const Pages = ({ pages }) => (
   </>
 );
 
-// Componente principal Header
+// Header principal responsivo
 export default function Header() {
   const iconLogo = "./favicon.svg";
   const nameLogo = "M.O.V.E";
@@ -63,25 +60,24 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-[var(--primary-color)] dark:bg-neutral-800 text-[var(--primary-color-variant)]">
-      <nav className="text-lg w-full max-w-[95%] mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
-        {/* Logo */}
-        <Logo iconLogo={iconLogo} nameLogo={nameLogo} />
-
-        {/* Login */}
-        <div className="sm:order-3">
-          <Login />
+    <header className="bg-[var(--primary-color)] text-[var(--primary-color-variant)]">
+      <nav className="w-full max-w-[95%] mx-auto px-4 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        {/* Linha superior no mobile / alinhamento horizontal no desktop */}
+        <div className="flex items-center justify-between w-full sm:w-auto sm:justify-start sm:gap-8">
+          <Logo iconLogo={iconLogo} nameLogo={nameLogo} />
+          <div className="sm:hidden">
+            <Login />
+          </div>
         </div>
 
-        {/* Menu de páginas */}
-        <div
-          id="hs-navbar-alignment"
-          className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
-          aria-labelledby="hs-navbar-alignment-collapse"
-        >
-          <div className="flex flex-col gap-20 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-            <Pages pages={pages} />
-          </div>
+        {/* Pages centralizadas no mobile, alinhadas no desktop */}
+        <div className="flex justify-center sm:justify-start gap-6 text-base w-full sm:w-auto">
+          <Pages pages={pages} />
+        </div>
+
+        {/* Login visível apenas no sm+ */}
+        <div className="hidden sm:block">
+          <Login />
         </div>
       </nav>
     </header>

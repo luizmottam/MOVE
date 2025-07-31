@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import './HeroBasicV2.css'
+import "./HeroBasicV2.css";
 
 const backgrounds = ["bg-card1", "bg-card2"];
 
@@ -49,33 +49,36 @@ export default function HeroBasicV2() {
         backgroundBlendMode: "overlay",
       }}
     >
-      <div className="container px-5 py-24 mx-auto text-center max-w-1x">
-        <h1 className="text-3xl font-semibold text-[var(--second-color)] mb-3">
+      <div className="container px-4 sm:px-6 py-20 mx-auto text-center">
+        <h1 className="text-2xl sm:text-3xl font-semibold text-[var(--second-color)] mb-3">
           COMO FUNCIONA
         </h1>
-        <p className="text-gray-300 mb-16">
-          Entenda como é simples garantir sua aventura com conforto, segurança e agilidade.
+        <p className="text-sm sm:text-base text-gray-300 mb-12 max-w-2xl mx-auto">
+          Entenda como é simples garantir sua aventura com conforto, segurança e
+          agilidade.
         </p>
 
-        <div className="flex flex-row justify-center gap-8">
+        <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8">
           {steps.map(({ number, title, text }) => (
             <div
               key={number}
-              className="bg-[var(--primary-color-variant)]/90 rounded-lg p-8 flex flex-col items-center max-w-xs text-center shadow-lg hover:scale-101"
+              className="w-full sm:w-[calc(50%-1rem)] md:w-[calc(25%-1rem)] max-w-sm bg-[var(--primary-color-variant)]/90 rounded-lg p-6 sm:p-8 flex flex-col items-center text-center shadow-lg hover:scale-[1.01] transition-transform"
             >
               <div
-                className="flex items-center justify-center rounded-full mb-6 font-bold text-[var(--primary-color)]"
+                className="flex items-center justify-center rounded-full mb-4 sm:mb-6 font-bold text-[var(--primary-color)]"
                 style={{
                   backgroundColor: "var(--second-color)",
-                  width: "56px",
-                  height: "56px",
-                  fontSize: "1.5rem",
+                  width: "48px",
+                  height: "48px",
+                  fontSize: "1.25rem",
                 }}
               >
                 {number}
               </div>
-              <h2 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">{title}</h2>
-              <p className="text-gray-700">{text}</p>
+              <h2 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3 text-[var(--primary-color)]">
+                {title}
+              </h2>
+              <p className="text-sm sm:text-base text-gray-700">{text}</p>
             </div>
           ))}
         </div>

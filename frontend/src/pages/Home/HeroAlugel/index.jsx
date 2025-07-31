@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import "./HeroAlugel.css";
 
 import CustomSelect from "../../../components/CustomSelect";
@@ -8,7 +8,6 @@ import CustomDatePicker from "../../../components/CustomDatePicker";
 
 import categorias from "/data/categorias.json";
 
-// Lista das classes CSS com os fundos
 const backgrounds = ["bg-duna", "bg-lancha"];
 
 export default function HeroAlugel() {
@@ -22,38 +21,41 @@ export default function HeroAlugel() {
         const nextIndex = (currentIndex + 1) % backgrounds.length;
         return backgrounds[nextIndex];
       });
-    }, 9000); // a cada 10 segundos
+    }, 9000);
 
-    return () => clearInterval(interval); // limpa o intervalo ao desmontar
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div
-      className={`hero-booking flex items-center justify-center bg-[var(--primary-color-variant)] transition-all duration-1000 ease-in-out ${bgClass}`}
-    >
-      <div className="text-center px-4 w-full m-[6rem]">
-        <div className="max-w-[50rem] mx-auto">
-          <h1 className="mb-5 text-5xl font-bold">M.O.V.E</h1>
-          <p className="mb-6">Mobility On-demand for Versatility Experience</p>
+    <div className={`hero-booking flex items-center justify-center bg-[var(--primary-color-variant)] transition-all duration-1000 ease-in-out ${bgClass}`}>
+      <div className="w-full px-4 m-4 sm:m-24 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="mb-4 text-3xl sm:text-5xl font-bold">M.O.V.E</h1>
+          <p className="mb-6 text-base sm:text-lg">Mobility On-demand for Versatility Experience</p>
 
-          <div className="flex flex-col items-center gap-6 bg-[var(--primary-color)] p-8 rounded-lg w-full">
-            <p className="text-(--second-color) font-semibold text-lg sm:text-xl tracking-wide uppercase">
+          <div className="flex flex-col items-center gap-6 bg-[var(--primary-color)] p-6 sm:p-8 rounded-lg w-full">
+            <p className="text-[var(--second-color)] font-semibold text-base sm:text-xl tracking-wide uppercase text-center">
               EXPERIÊNCIA DISPONÍVEL EM ÁGUAS E TRILHAS
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-0 w-full justify-center items-center bg-[var(--primary-color-variant)] rounded-lg border border-gray-400">
-              <div className="w-full sm:w-1/3">
+            <div className="flex flex-col sm:flex-row gap-0 sm:gap-0 w-full bg-[var(--primary-color-variant)] rounded-lg">
+              <div className="flex-1 min-w-0">
                 <CustomSearch />
               </div>
-              <div className="w-full sm:w-1/3">
+              <div className="flex-1 min-w-0">
                 <CustomSelect options={categorias} />
               </div>
-              <div className="w-full sm:w-1/3">
+              <div className="flex-1 min-w-0">
                 <CustomDatePicker />
               </div>
             </div>
 
-            <button className="text-lg text-[var(--primary-color-variant)] font-bold bg-[var(--second-color)] py-[0.5rem] px-[3rem] rounded-full hover:scale-105 hover" onClick={() => navigate('./alugel/')}>Reservar</button>
+            <button
+              className="text-base sm:text-lg font-bold text-[var(--primary-color-variant)] bg-[var(--second-color)] py-2 px-6 rounded-full hover:scale-105 transition-transform w-full sm:w-auto"
+              onClick={() => navigate('./alugel/')}
+            >
+              Reservar
+            </button>
           </div>
         </div>
       </div>

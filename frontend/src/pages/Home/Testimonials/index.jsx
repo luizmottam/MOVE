@@ -57,7 +57,7 @@ export default function Testimonials() {
         </div>
 
         <div className="mt-12">
-          <button className="bg-[var(--second-color)] hover:bg-[var(--second-color-hover)] font-semibold px-6 py-3 rounded-md transition">
+          <button className="bg-[var(--second-color)] hover:bg-[var(--second-color-hover)] hover:scale-101 font-semibold px-6 py-3 rounded-md transition">
             VER MAIS DEPOIMENTOS
           </button>
         </div>

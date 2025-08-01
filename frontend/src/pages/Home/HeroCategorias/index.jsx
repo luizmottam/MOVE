@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import data from "/data/cards.json";
+import data from "./data/cards.json";
 
 export default function CategoriaCard() {
   const carouselRef = useRef(null);

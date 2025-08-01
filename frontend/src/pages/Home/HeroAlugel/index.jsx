@@ -6,14 +6,22 @@ import CustomSelect from "../../../components/CustomSelect";
 import CustomSearch from "../../../components/CustomSearch";
 import CustomDatePicker from "../../../components/CustomDatePicker";
 
-import categorias from "/data/categorias.json";
-
 const backgrounds = ["bg-duna", "bg-lancha"];
 
 export default function HeroAlugel() {
-  const [bgClass, setBgClass] = useState(backgrounds[0]);
+  const [bgClass, setBgClass] = useState(backgrounds[0]); // ✅ corrigido
+  const [categorias, setCategorias] = useState([]);
   const navigate = useNavigate();
 
+  // Carrega categorias.json da pasta public
+  useEffect(() => {
+    fetch("/data/categorias.json")
+      .then((res) => res.json())
+      .then((json) => setCategorias(json))
+      .catch((err) => console.error("Erro ao carregar categorias:", err));
+  }, []);
+
+  // Troca de fundo automático
   useEffect(() => {
     const interval = setInterval(() => {
       setBgClass((prev) => {

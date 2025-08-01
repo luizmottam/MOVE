@@ -1,9 +1,17 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import data from "/data/cards.json";
 
 export default function CategoriaCard() {
   const carouselRef = useRef(null);
+  const [data, setData] = useState([]);
+
+  // Carrega JSON da pasta public
+  useEffect(() => {
+    fetch("/data/cards.json")
+      .then((res) => res.json())
+      .then((json) => setData(json))
+      .catch((err) => console.error("Erro ao carregar JSON:", err));
+  }, []);
 
   // Auto scroll apenas em mobile
   useEffect(() => {

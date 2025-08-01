@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Search, Check } from "lucide-react";
-import cidades from "/data/cidades.json";
 
 const CustomSearch = (props) => {
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState(null);
   const [open, setOpen] = useState(false);
+  const [cidadesData, setCidadesData] = useState({});
+
+  useEffect(() => {
+    fetch("/data/cidades.json")
+      .then((res) => res.json())
+      .then((json) => setCidadesData(json))
+      .catch((err) => console.error("Erro ao carregar cidades:", err));
+  }, []);
 
   // Convertendo JSON original em [{ label: cidade, description: estado }]
-  const allOptions = Object.entries(cidades).flatMap(([estado, cidades]) =>
+  const allOptions = Object.entries(cidadesData).flatMap(([estado, cidades]) =>
     cidades.map((cidade) => ({
       label: cidade,
       description: estado,
@@ -54,7 +61,7 @@ const CustomSearch = (props) => {
               key={`${item.label}-${index}`}
               onClick={() => {
                 setSelected(item);
-                setQuery(item.label + ', ' + item.description);
+                setQuery(item.label + ", " + item.description);
                 setOpen(false);
               }}
               className={`flex w-full items-center justify-between px-4 py-2 text-sm text-left hover:bg-gray-100 ${

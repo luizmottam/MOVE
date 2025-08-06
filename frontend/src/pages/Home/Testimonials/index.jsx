@@ -9,8 +9,8 @@ export default function Testimonials() {
       product: "Quadriciclo Honda TRX",
     },
     {
-      text: "Aluguei jets para um evento corporativo de team building e foi um sucesso absoluto. Equipamentos novos e processo de reserva simplificado.",
-      product: "Jet Ski Sea-Doo GTX",
+      text: "Aluguei algumas motos aquáticas para um evento corporativo de team building e foi um sucesso absoluto. Equipamentos novos e processo de reserva simplificado.",
+      product: "Moto Aquática Sea-Doo GTX",
     },
   ];
 

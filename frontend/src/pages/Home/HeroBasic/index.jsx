@@ -31,7 +31,7 @@ export default function HeroBasic() {
             Aventura em Alto Nível
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-200">
-            Lanchas, quadriciclos, UTVs e jetskis de alta performance para quem
+            Lanchas, quadriciclos, UTVs e motos aquáticas de alta performance para quem
             busca experiências únicas ao ar livre. Seja navegando por águas
             cristalinas ou explorando trilhas off-road, oferecemos os veículos
             ideais para transformar qualquer momento em uma aventura

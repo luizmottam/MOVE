@@ -7,7 +7,7 @@ const steps = [
   {
     number: 1,
     title: "Escolha seu veículo",
-    text: "Explore nossa seleção de lanchas, jets, UTVs e quadriciclos para encontrar o equipamento ideal para sua aventura.",
+    text: "Explore nossa seleção de lanchas, motos aquáticas, UTVs e quadriciclos para encontrar o equipamento ideal para sua aventura.",
   },
   {
     number: 2,

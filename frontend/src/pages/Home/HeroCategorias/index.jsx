@@ -75,9 +75,9 @@ export default function CategoriaCard() {
                 flex-shrink-0 sm:flex-shrink-0
                 min-w-[80%] sm:min-w-0
                 snap-center sm:snap-none
-                flex flex-col overflow-hidden border border-gray-200 dark:border-neutral-700
+                flex flex-col overflow-hidden border border-gray-200
                 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300
-                bg-[var(--primary-color-variant)] dark:bg-neutral-900
+                bg-[var(--primary-color-variant)]
               "
             >
               <div

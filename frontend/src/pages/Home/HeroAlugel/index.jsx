@@ -31,7 +31,7 @@ export default function HeroAlugel() {
       <div className="w-full px-4 m-4 sm:m-24 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="mb-4 text-3xl sm:text-5xl font-bold">M.O.V.E</h1>
-          <p className="mb-6 text-base sm:text-lg">Mobility On-demand for Versatility Experience</p>
+          <p className="mb-6 text-base sm:text-lg">Mobility On-demand for Versatility Experiences</p>
 
           <div className="flex flex-col items-center gap-6 bg-[var(--primary-color)] p-6 sm:p-8 rounded-lg w-full">
             <p className="text-[var(--second-color)] font-semibold text-base sm:text-xl tracking-wide uppercase text-center">
@@ -54,7 +54,7 @@ export default function HeroAlugel() {
               className="text-base sm:text-lg font-bold text-[var(--primary-color-variant)] bg-[var(--second-color)] py-2 px-6 rounded-full hover:scale-105 transition-transform w-full sm:w-auto"
               onClick={() => navigate('./alugel/')}
             >
-              Reservar
+              Buscar
             </button>
           </div>
         </div>

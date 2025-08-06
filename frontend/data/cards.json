@@ -6,7 +6,7 @@
     "backgroundImage": "./src/assets//background-cards/background-lancha-card.png"
   },
   {
-    "title": "Jet Ski",
+    "title": "Moto Aquatica",
     "description": "Liberdade e adrenalina sobre as ondas",
     "image": "./src/assets/veicles-images/jetski.png",
     "backgroundImage": "./src/assets/background-cards/background-jetski-card.png"

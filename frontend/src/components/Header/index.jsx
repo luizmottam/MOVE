@@ -29,7 +29,7 @@ const Login = () => (
                  shadow-2xs hover:bg-[var(--second-color-hover)] hover:scale-105
                  transition-all duration-300"
     >
-      Cadastrar
+      Cadastre-se
     </button>
   </div>
 );

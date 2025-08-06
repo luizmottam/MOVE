@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
           <div className="sm:col-span-2">
             <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl">
-              Se inscreva para receber atualizações.
+              Inscreva-se para receber atualizações.
             </h1>
 
             <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
@@ -84,7 +84,7 @@ export default function Footer() {
                 M.O.V.E
               </p>
             </div>
-            <p>Mobility On-demand for Versatility Experience</p>
+            <p>Mobility On-demand for Versatility Experiences</p>
           </div>
 
           <div className="flex -mx-2">

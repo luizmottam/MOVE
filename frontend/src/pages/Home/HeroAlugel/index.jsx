@@ -52,7 +52,7 @@ export default function HeroAlugel() {
 
             <button
               className="text-base sm:text-lg font-bold text-[var(--primary-color-variant)] bg-[var(--second-color)] py-2 px-6 rounded-full hover:scale-105 transition-transform w-full sm:w-auto"
-              onClick={() => navigate('./alugel/')}
+              onClick={() => navigate('./veiculos/')}
             >
               Buscar
             </button>

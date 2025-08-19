@@ -1,0 +1,17 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const LinkGroup = ({ title, links }) => (
+  <div className="link-group">
+    <h4 className="font-semibold mb-3">{title}</h4>
+    <ul>
+      {links.map((link, index) => (
+        <li key={index} className="hover:text-gray-600">
+          <Link to={link.href}>{link.label}</Link>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
+export default LinkGroup;

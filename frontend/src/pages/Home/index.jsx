@@ -1,8 +1,11 @@
-export default function Home() {
+import HeroBooking from "./HeroBooking/";
+import HeroCard from "./HeroCards";
 
-    return (
-        <>
-        
-        </>
-    )
+export default function Home() {
+  return (
+    <>
+      <HeroBooking />
+      <HeroCard />
+    </>
+  );
 }

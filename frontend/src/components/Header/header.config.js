@@ -1,5 +1,4 @@
 export const linksNav = [
-  { label: "", href: "" },
-  { label: "", href: "" },
-  { label: "", href: "" }
+  { label: "Sobre", href: "/sobre" },
+  { label: "Ajuda", href: "/ajuda" }
 ];

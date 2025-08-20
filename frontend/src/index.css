@@ -14,5 +14,8 @@ body {
 	--bc: #F2F4F3; /*background color*/
 
 
-    --dp: 10rem; /* default padding*/
+    --dp: 8rem; /* default padding*/
+    --dps: 0.8rem; /* default padding*/
+
+    --fs: 12pt;
 }

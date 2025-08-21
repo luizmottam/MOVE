@@ -8,28 +8,28 @@ export const cardText = [
     id: 'lancha',
     title: "Lancha",
     description:
-      "A lancha não é só um meio de transporte, é liberdade, luxo e aventura em alto-mar. Ela transforma cada saída em momentos únicos — seja para relaxar, celebrar ou viver a emoção das ondas. Mais que um produto, é o estilo de vida que poucos têm o privilégio de conquistar.",
+      "Mais que transporte, a lancha é luxo, liberdade e momentos inesquecíveis navegando em alto-mar.",
       backgroundImg: imageLancha
   },
   {
     id: 'jet-ski',
     title: "Moto aquática",
     description:
-      "A moto aquática é pura adrenalina: velocidade, liberdade e emoção na ponta dos dedos. Ela transforma qualquer dia comum em uma aventura inesquecível sobre as ondas. Mais que diversão, é a sensação de dominar o mar com intensidade e estilo.",
+      "O jet ski é adrenalina pura: velocidade, emoção e liberdade em cada curva sobre as ondas.",
       backgroundImg: imageJetSki
   },
   {
     id: 'utv',
     title: "UTV",
     description:
-      "O UTV é aventura sem fronteiras. Potente, robusto e seguro, encara terrenos extremos sem perder o conforto. É a máquina que leva você além do comum, para viver experiências que poucos têm coragem de buscar.",
+      "O UTV é potência sem limites: aventura, segurança e conforto para explorar qualquer terreno extremo.",
       backgroundImg: imageUtv
   },
   {
     id: 'quadriciclo',
     title: "Quadriciclo",
     description:
-      "O quadriciclo é liberdade em quatro rodas. Ágil, resistente e pronto para qualquer terreno, ele transforma trilhas, campos e praias em verdadeiros playgrounds de emoção. Um convite constante para sair da rotina e explorar o novo.",
+      "O quadriciclo é liberdade total: ágil, resistente e pronto para transformar qualquer trilha em diversão.",
     backgroundImg: imageQuadriciculo
   },
 ];

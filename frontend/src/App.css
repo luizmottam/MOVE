@@ -1,9 +1,1 @@
 @import "tailwindcss";
-
-
-:root {
-    --primary-color: #10273b;
-    --primary-color-variant: #F6F7F8;
-    --second-color: #d9a96a;
-    --second-color-hover: #e2b679;
-}

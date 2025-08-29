@@ -1,118 +1,56 @@
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import LinkGroup from "./LinkGroup";
+import { footerLinks } from "./footer.config";
+import { Instagram, Twitter, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const pages = [
-  { name: "Início", url: "/" },
-  { name: "Sobre Nós", url: "/sobre-nos" },
-  { name: "Como funciona", url: "/como-funciona" },
-];
-
-const pagesFunctions = [
-  { name: "Alugéis", url: "/alugeis" },
-  { name: "Contato", url: "/sobre-nos" },
-];
-
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-[var(--primary-color-variant)]">
-      <div className="container px-6 py-12 mx-auto">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-          <div className="sm:col-span-2">
-            <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl">
-              Se inscreva para receber atualizações.
-            </h1>
-
-            <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-              <input
-                id="email"
-                type="text"
-                className="px-4 py-2 text-gray-700 bg-[var(--primary-color-variant)] border rounded-md focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
-                placeholder="Email Address"
-              />
-
-              <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-[var(--primary-color-variant)] transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                Inscreva-se
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <p className="font-semibold text-gray-800">
-              Páginas
-            </p>
-
-            <div className="flex flex-col items-start mt-5 space-y-2">
-              {pages.map((page, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:underline hover:text-blue-500"
-                >
-                  {page.name}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <p className="font-semibold text-gray-800">
-              Sobre Alugeis
-            </p>
-
-            <div className="flex flex-col items-start mt-5 space-y-2">
-              {pagesFunctions.map((page, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:underline hover:text-blue-500"
-                >
-                  {page.name}
-                </a>
-              ))}
-            </div>
+    <footer className="flex flex-col gap-8 px-[var(--dps)] lg:px-[var(--dp)] py-2">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div className="flex flex-col col-span-2">
+          <h2 className="text-xl lg:text-3xl font-semibold mb-4 ">
+            Inscreva-se para receber atualizações
+          </h2>
+          <div className="flex flex-col lg:flex-row gap-2 lg:gap-5">
+            <input
+              className="border rounded-lg p-1.5 lg:p-3 lg:text-lg"
+              type="email"
+              name="email"
+              placeholder="Digite seu email"
+            />
+            <input
+              className="bg-[var(--pc)] text-white font-semibold px-6 py-2 rounded-lg lg:text-lg"
+              type="button"
+              value="Inscreva-se"
+            />
           </div>
         </div>
+        {footerLinks.map((section, index) => (
+          <LinkGroup key={index} title={section.title} links={section.links} />
+        ))}
+      </div>
 
-        <hr className="my-6 border-gray-200 md:my-8" />
+      <hr />
 
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-8">
-            <div className="flex items-center gap-3">
-              <a href="#">
-                <img className="w-auto h-12" src="/favicon.svg" alt="" />
-              </a>
-              <p className="text-xl text-[var(--primary-color)] text-3xl font-semibold">
-                M.O.V.E
-              </p>
-            </div>
-            <p>Mobility On-demand for Versatility Experience</p>
-          </div>
-
-          <div className="flex -mx-2">
-            <a
-              href="#"
-              className="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500"
-              aria-label="Instagram"
-            >
-              <Instagram />
-            </a>
-            <a
-              href="#"
-              className="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500"
-              aria-label="Twitter"
-            >
-              <Twitter />
-            </a>
-
-            <a
-              href="#"
-              className="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500"
-              aria-label="Facebook"
-            >
-              <Facebook />
-            </a>
-          </div>
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="flex items-center gap-5 text-center sm:text-left">
+          <img className="h-12" src="favicon.svg" alt="Logo" />
+          <p className="lg:text-xl">Mobility On-demand for Versatility Experience</p>
+        </div>
+        <div className="flex gap-5">
+          <Link to="/#" className="hover:text-gray-400">
+            <Twitter />
+          </Link>
+          <Link to="/#" className="hover:text-gray-400">
+            <Instagram />
+          </Link>
+          <Link to="/#" className="hover:text-gray-400">
+            <Facebook />
+          </Link>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
